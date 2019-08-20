@@ -13,3 +13,17 @@ typedef struct BiNode{
 	ElemType data;
 }BiNode,*BiTree;
 
+
+void CreateBiTree(BiTree *T,ElemType input[],int *pos)
+{
+	if(input[*pos] == '#'){
+		*T = NULL;
+	}
+	*T = (BiTree)malloc(sizeof(BiNode));
+	(*T)->data = input[*pos];
+	*pos++;
+	CreateBiTree(&(*T)->lchild,input,*pos);
+	*pos++;
+	CreateBiTree(&(*T)->lchild,input,*pos);
+}
+
