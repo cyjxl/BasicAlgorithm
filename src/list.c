@@ -15,13 +15,6 @@ typedef struct LNode
 	struct LNode *next;
 }LNode,*LinkList;
 
-
-
-
-
-
-
-
 /**********************************************************************
 函 数 名：CreatLinkList
 函数功能：参数创建单链表

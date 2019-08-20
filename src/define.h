@@ -16,6 +16,9 @@ Desc：此文件为算法和数据结构的公共头文件
 #define FAILURE					(1)
 #define JUDGE_RETURN(exp,err)	if(exp){return err;}
 #define MAX(a,b)				(a>b?a:b);
+
+
+
 typedef unsigned int uint32;
 typedef unsigned short uint16;
 typedef unsigned char uint8;
