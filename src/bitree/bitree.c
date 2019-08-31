@@ -4,11 +4,8 @@ Author：lvxulin
 CreateTime：2019.8.20
 Desc：此文件主要是实现二叉树相关的操作
 *********************************************************************/
-
-
 #include <stdlib.h>
 #include "bitree.h"
-
 
 /**********************************************************************
 函 数 名：CreateBiTree
@@ -26,6 +23,7 @@ void CreateBiTree(BiTree *T,ElemType input[],int *pos)
 {
 	if(input[*pos] == '#'){
 		*T = NULL;
+		return;
 	}
 	*T = (BiTree)malloc(sizeof(BiNode));
 	(*T)->data = input[*pos];
